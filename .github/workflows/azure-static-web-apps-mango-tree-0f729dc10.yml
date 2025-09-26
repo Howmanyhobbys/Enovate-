@@ -20,6 +20,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
+          app_location: "/"
+          api_location: ""
+          output_location: ""
           submodules: true
           lfs: false
           skip_app_builder: true
@@ -57,4 +60,5 @@ jobs:
         uses: Azure/static-web-apps-deploy@v1
         with:
           action: "close"
+
 
